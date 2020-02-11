@@ -1,3 +1,25 @@
+/*Importar fuentes custom*/
+
+@font-face{
+	font-family: "yanone";
+	src: url("./fonts/yanone.ttf");
+}
+
+@font-face{
+	font-family: "finger";
+	src: url("./fonts/finger.ttf");
+}
+
+/*Generales*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
 body{
-	background: pink;
+	font-family: "yanone", Arial, Helvetica;
+	font-size: 20px;
+	background: hsla(14, 100%, 53%, 0.6);
+	position: fixed;
 }

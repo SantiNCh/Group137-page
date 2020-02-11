@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 //cargar archivos rutas
+var project_routes = require('./routes/project');
 
 //rutas
 
@@ -16,18 +17,7 @@ app.use(bodyParser.json());
 //CORS
 
 //rutas
-app.get('/test', (req, res)=>{
-	res.status(200).send({
-		message: "Hola mundo desde mi API de NodeJS"
-	});
-});
-
-app.get('/', (req, res)=>{
-	res.status(200).send(
-		"<h1>Pagina de inicio</h1>"
-	);
-});
-
+app.use('/api',project_routes);
 
 
 //exportar

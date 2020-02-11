@@ -1,11 +1,15 @@
-<h1>Proyecto pagina grupo</h1>
-
-<ul>
-  <li><a [routerLink]="['/home']">Inicio</a></li>
-  <li><a [routerLink]="['/fotos']">Fotos</a></li>
-  <li><a [routerLink]="['/contacto']">Contacto</a></li>
-  <li><a [routerLink]="['/calendario']">Calendario</a></li>
-</ul>
-
-
-<router-outlet></router-outlet>
+<header>
+  <ul>
+    <li><a [routerLink]="['/home']">Inicio</a></li>
+    <li><a [routerLink]="['/fotos']">Fotos</a></li>
+    <li id="logo"><a href="#">GS137</a></li>
+    <li><a [routerLink]="['/contacto']">Contacto</a></li>
+    <li><a [routerLink]="['/calendario']">Calendario</a></li>
+  </ul>
+</header>
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+<footer>
+  Web page by SCH &copy;
+</footer>

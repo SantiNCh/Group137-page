@@ -44,7 +44,20 @@ var controller = {
 		
 			return res.status(200).send({project});
 		});
-	}
+	},
+
+	getProjects: function(req, res){
+		Project.find({}).sort('-year').exec((err, projects) => {
+			if(err) return res.status(500).send({message:"Error al devolver los datos"});
+
+			if (!projects) return res.status(404).send({message:"No hay proyectos para mostrar"});
+
+			return res.status(200).send({projects}); 
+
+		});
+	},
+
+	
 
 };
 

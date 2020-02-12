@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   constructor() { 
   	this.title = "Grupo scout 137";
   	this.subtitle = "Bienvenidos a nuestra pagina web!";
-  	this.email = "sadas@gmail.com"
+  	this.email = "Distrito 1 - Zona 5"
   }
 
   ngOnInit() {
@@ -25,7 +25,11 @@ export class HomeComponent implements OnInit {
           captions: true,
           slideWidth: 1200
     });
-});
+
+
+
+
+  });
 
   }
 

@@ -46,6 +46,7 @@ header ul{
 	width: 38%;
 	height: inherit;
 	margin: 0px auto;
+	margin-left: 460px;
 }
 
 header ul li{
@@ -154,7 +155,7 @@ article.about{
 
 .bx-wrapper{
 	margin-right: 100px;
-	margin-left: 100px;
+	margin-left: 150px;
 }
 
 .bx-wrapper, .bx-viewport{

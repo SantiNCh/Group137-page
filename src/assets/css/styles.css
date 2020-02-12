@@ -38,6 +38,7 @@ header{
 	background: rgb(204, 102, 0);
 	position: fixed;
 	text-transform: uppercase;
+	z-index: 1;
 }
 
 header ul{
@@ -149,4 +150,15 @@ article.about{
 	padding-top: 20px;
 	padding-bottom: 30px;
 	text-align: justify;
+}
+
+.bx-wrapper{
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+.bx-wrapper, .bx-viewport{
+	height: 300px !important;
+	width: 800px !important;
+	z-index: 0;
 }

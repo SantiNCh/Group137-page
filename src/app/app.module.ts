@@ -9,6 +9,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { ErrorComponent } from './components/error/error.component';
 
+//import * as $ from 'jquery';
+
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -70,6 +70,18 @@ var controller = {
 		});
 	},
 
+	deleteProject: function(req, res){
+		var projectId = req.params.id;
+		
+		Project.findByIdAndDelete(projectId, (err, projectDelete) => {
+			if(err) return res.status(500).send({message:"Error al borrar los datos"});
+
+			if (!projectDelete) return res.status(404).send({message:"No hay proyectos para borrar"});
+
+			return res.status(200).send({project: projectDelete}); 
+		});
+	}
+
 };
 
 module.exports = controller;
